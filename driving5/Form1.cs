@@ -12,6 +12,8 @@ namespace driving5
 {
     public partial class Form1 : Form
     {
+        int correctAns;
+        
         public Form1()
         {
             InitializeComponent();
@@ -21,7 +23,7 @@ namespace driving5
         private void QuestionChooser()
         {
             Random r = new Random();
-            int qnum = r.Next(1, 1);
+            int qnum = r.Next(1, 25);
 
             if (qnum == 1)
             {
