@@ -166,6 +166,6 @@ namespace driving
             button2.Text = "";
             button3.Text = "";
             button4.Text = "";
-          } else 
+          }
     }
 }
