@@ -49,7 +49,7 @@ namespace driving5
                 button1.Text = "марката на автомобила";
                 button2.Text = "видът на превозвания товар";
                 button3.Text = "състоянието на пътя";
-                button4.Text = "видът на движещото се отпред ППС";ю
+                button4.Text = "видът на движещото се отпред ППС";
                 correctAns = 3;
             }
             else if (qnum == 4)
