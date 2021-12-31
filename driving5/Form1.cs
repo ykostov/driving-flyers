@@ -13,6 +13,7 @@ namespace driving5
     public partial class Form1 : Form
     {
         int correctAns;
+        bool is_submmitted1 = true;
 
         public Form1()
         {
@@ -26,13 +27,19 @@ namespace driving5
             int qnum = r.Next(1, 25);
 
             if (qnum == 1)
-            {
-                label1.Text = "Правилата за движение в населено място се прилагат:";
-                button1.Text = "по всички участъци от пътя, по които се движат пешеходци";
-                button2.Text = "след знака, с който е обозначено началото на населеното място";
-                button3.Text = "от първата сграда в населеното място";
-                button4.Text = "само, когато гледат полицаи";
-                correctAns = 2;
+            {                
+
+                if (is_submmitted1 == false)
+                {
+                    label1.Text = "Правилата за движение в населено място се прилагат:";
+                    button1.Text = "по всички участъци от пътя, по които се движат пешеходци";
+                    button2.Text = "след знака, с който е обозначено началото на населеното място";
+                    button3.Text = "от първата сграда в населеното място";
+                    button4.Text = "само, когато гледат полицаи";
+                    correctAns = 2;
+
+                    is_submmitted1 = true;
+                }
             }
             else if (qnum == 2)
             {
