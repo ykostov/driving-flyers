@@ -22,146 +22,146 @@ namespace driving
             QuestionChooser(qn);
         }
     }
-    private void QuestionChooser(qn){
-          if(qn == 1){
+    private void QuestionChooser(int qnum){
+          if(qnum == 1){
             label1.Text = "";
             button1.Text = "";
             button2.Text = "";
             button3.Text = "";
             button4.Text = "";
-          } else if(qn == 2){
+          } else if(qnum == 2){
             label1.Text = "";
             button1.Text = "";
             button2.Text = "";
             button3.Text = "";
             button4.Text = "";
-          } else if(qn == 3){
+          } else if(qnum == 3){
             label1.Text = "";
             button1.Text = "";
             button2.Text = "";
             button3.Text = "";
             button4.Text = "";
-          } else if(qn == 4){
+          } else if(qnum == 4){
             label1.Text = "";
             button1.Text = "";
             button2.Text = "";
             button3.Text = "";
             button4.Text = "";
-          } else if(qn == 5){
+          } else if(qnum == 5){
             label1.Text = "";
             button1.Text = "";
             button2.Text = "";
             button3.Text = "";
             button4.Text = "";
-          } else if(qn == 6){
+          } else if(qnum == 6){
             label1.Text = "";
             button1.Text = "";
             button2.Text = "";
             button3.Text = "";
             button4.Text = "";
-          } else if(qn == 7){
+          } else if(qnum == 7){
             label1.Text = "";
             button1.Text = "";
             button2.Text = "";
             button3.Text = "";
             button4.Text = "";
-          } else if(qn == 8){
+          } else if(qnum == 8){
             label1.Text = "";
             button1.Text = "";
             button2.Text = "";
             button3.Text = "";
             button4.Text = "";
-          } else if(qn == 9){
+          } else if(qnum == 9){
             label1.Text = "";
             button1.Text = "";
             button2.Text = "";
             button3.Text = "";
             button4.Text = "";
-          } else if(qn == 10){
+          } else if(qnum == 10){
             label1.Text = "";
             button1.Text = "";
             button2.Text = "";
             button3.Text = "";
             button4.Text = "";
-          } else if(qn == 11){
+          } else if(qnum == 11){
             label1.Text = "";
             button1.Text = "";
             button2.Text = "";
             button3.Text = "";
             button4.Text = "";
-          } else if(qn == 12){
+          } else if(qnum == 12){
             label1.Text = "";
             button1.Text = "";
             button2.Text = "";
             button3.Text = "";
             button4.Text = "";
-          } else if(qn == 13){
+          } else if(qnum == 13){
             label1.Text = "";
             button1.Text = "";
             button2.Text = "";
             button3.Text = "";
             button4.Text = "";
-          } else if(qn == 14){
+          } else if(qnum == 14){
             label1.Text = "";
             button1.Text = "";
             button2.Text = "";
             button3.Text = "";
             button4.Text = "";
-          } else if(qn == 16){
+          } else if(qnum == 16){
             label1.Text = "";
             button1.Text = "";
             button2.Text = "";
             button3.Text = "";
             button4.Text = "";
-          } else if(qn == 17){
+          } else if(qnum == 17){
             label1.Text = "";
             button1.Text = "";
             button2.Text = "";
             button3.Text = "";
             button4.Text = "";
-          } else if(qn == 18){
+          } else if(qnum == 18){
             label1.Text = "";
             button1.Text = "";
             button2.Text = "";
             button3.Text = "";
             button4.Text = "";
-          } else if(qn == 19){
+          } else if(qnum == 19){
             label1.Text = "";
             button1.Text = "";
             button2.Text = "";
             button3.Text = "";
             button4.Text = "";
-          } else if(qn == 20){
+          } else if(qnum == 20){
             label1.Text = "";
             button1.Text = "";
             button2.Text = "";
             button3.Text = "";
             button4.Text = "";
-          } else if(qn == 21){
+          } else if(qnum == 21){
             label1.Text = "";
             button1.Text = "";
             button2.Text = "";
             button3.Text = "";
             button4.Text = "";
-          } else if(qn == 22){
+          } else if(qnum == 22){
             label1.Text = "";
             button1.Text = "";
             button2.Text = "";
             button3.Text = "";
             button4.Text = "";
-          } else if(qn == 23){
+          } else if(qnum == 23){
             label1.Text = "";
             button1.Text = "";
             button2.Text = "";
             button3.Text = "";
             button4.Text = "";
-          } else if(qn == 24){
+          } else if(qnum == 24){
             label1.Text = "";
             button1.Text = "";
             button2.Text = "";
             button3.Text = "";
             button4.Text = "";
-          } else if(qn == 25){
+          } else if(qnum == 25){
             label1.Text = "";
             button1.Text = "";
             button2.Text = "";
