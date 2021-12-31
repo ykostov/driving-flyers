@@ -19,7 +19,7 @@ namespace driving
             InitializeComponent();
         }
     }
-    void QuestionChooser{
+    private void QuestionChooser(){
           Random r = new Random();
           int qn = r.Next(1,25);
           if(qn == 1){
@@ -166,6 +166,6 @@ namespace driving
             button2.Text = "";
             button3.Text = "";
             button4.Text = "";
-          } else 
+          }
     }
 }
