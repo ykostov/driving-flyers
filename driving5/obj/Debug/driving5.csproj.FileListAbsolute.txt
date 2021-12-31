@@ -1,0 +1,11 @@
+C:\Users\nsrta\source\repos\driving5\bin\Debug\driving5.exe.config
+C:\Users\nsrta\source\repos\driving5\bin\Debug\driving5.exe
+C:\Users\nsrta\source\repos\driving5\bin\Debug\driving5.pdb
+C:\Users\nsrta\source\repos\driving5\obj\Debug\driving5.csproj.AssemblyReference.cache
+C:\Users\nsrta\source\repos\driving5\obj\Debug\driving5.csproj.SuggestedBindingRedirects.cache
+C:\Users\nsrta\source\repos\driving5\obj\Debug\driving5.Form1.resources
+C:\Users\nsrta\source\repos\driving5\obj\Debug\driving5.Properties.Resources.resources
+C:\Users\nsrta\source\repos\driving5\obj\Debug\driving5.csproj.GenerateResource.cache
+C:\Users\nsrta\source\repos\driving5\obj\Debug\driving5.csproj.CoreCompileInputs.cache
+C:\Users\nsrta\source\repos\driving5\obj\Debug\driving5.exe
+C:\Users\nsrta\source\repos\driving5\obj\Debug\driving5.pdb
