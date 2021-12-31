@@ -16,12 +16,13 @@ namespace driving
 
         public Form1()
         {
+            Random r = new Random();
+            int qn = r.Next(1,25);
             InitializeComponent();
+            QuestionChooser(qn);
         }
     }
-    private void QuestionChooser(){
-          Random r = new Random();
-          int qn = r.Next(1,25);
+    private void QuestionChooser(qn){
           if(qn == 1){
             label1.Text = "";
             button1.Text = "";
