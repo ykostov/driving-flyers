@@ -11,7 +11,8 @@ using System.Windows.Forms;
 namespace driving5
 {
     public partial class Form1 : Form
-    {
+    {   
+        int correctAns;
         public Form1()
         {
             InitializeComponent();
@@ -21,12 +22,12 @@ namespace driving5
         private void QuestionChooser()
         {
             Random r = new Random();
-            int qnum = r.Next(1, 1);
+            int qnum = r.Next(1, 25);
 
             if (qnum == 1)
             {
-                label1.Text = "New tex111t";
-                button1.Text = "";
+                label1.Text = "Правилата за движение в населено място се прилагат:";
+                button1.Text = "по всички участъци от пътя, по които се движат пешеходци";
                 button2.Text = "";
                 button3.Text = "";
                 button4.Text = "";
