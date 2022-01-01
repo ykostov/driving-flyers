@@ -424,7 +424,7 @@ namespace driving5
 
         private void button5_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "1111";
+            
         }
     }
 }
