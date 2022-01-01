@@ -14,6 +14,7 @@ namespace driving5
     {
         int correctAns;
         int number_questions = 0;
+        int unique_index = 0;
 
         bool is_submmitted1 = false;
         bool is_submmitted2 = false;
@@ -72,6 +73,7 @@ namespace driving5
                         correctAns = 2;
 
                         is_submmitted1 = true;
+                        unique_index++;
                     }
                 }
                 else if (qnum == 2)
@@ -85,6 +87,7 @@ namespace driving5
                         button4.Text = "Преминаването е разрешено";
                         correctAns = 3;
                         is_submmitted2 = true;
+                        unique_index++;
                     }
                 }
                 else if (qnum == 3)
@@ -98,6 +101,7 @@ namespace driving5
                         button4.Text = "видът на движещото се отпред ППС";
                         correctAns = 3;
                         is_submmitted3 = true;
+                        unique_index++;
                     }
                 }
                 else if (qnum == 4)
@@ -111,6 +115,7 @@ namespace driving5
                         button4.Text = "55 км/ч";
                         correctAns = 1;
                         is_submmitted4 = true;
+                        unique_index++;
                     }
                 }
                 else if (qnum == 5)
@@ -124,6 +129,7 @@ namespace driving5
                         button4.Text = "ще продължа движението, като включа дългите светлини";
                         correctAns = 3;
                         is_submmitted5 = true;
+                        unique_index++;
                     }
                 }
                 else if (qnum == 6)
@@ -137,6 +143,7 @@ namespace driving5
                         button4.Text = "да преминава при забраняващ сигнал на светофара";
                         correctAns = 2;
                         is_submmitted6 = true;
+                        unique_index++;
                     }
                 }
                 else if (qnum == 7)
@@ -150,6 +157,7 @@ namespace driving5
                         button4.Text = "45 км/ч";
                         correctAns = 4;
                         is_submmitted7 = true;
+                        unique_index++;
                     }
                 }
                 else if (qnum == 8)
@@ -163,6 +171,7 @@ namespace driving5
                         button4.Text = "възможното странично хлъзгане на автомобила";
                         correctAns = 4;
                         is_submmitted8 = true;
+                        unique_index++;
                     }
                 }
                 else if (qnum == 9)
@@ -176,6 +185,7 @@ namespace driving5
                         button4.Text = "трактор";
                         correctAns = 2;
                         is_submmitted9 = true;
+                        unique_index++;
                     }
                 }
                 else if (qnum == 10)
@@ -189,6 +199,7 @@ namespace driving5
                         button4.Text = "никакво";
                         correctAns = 3;
                         is_submmitted10 = true;
+                        unique_index++;
                     }
                 }
                 else if (qnum == 11)
@@ -202,6 +213,7 @@ namespace driving5
                         button4.Text = " 1,5 м";
                         correctAns = 2;
                         is_submmitted11 = true;
+                        unique_index++;
                     }
                 }
                 else if (qnum == 12)
@@ -215,6 +227,7 @@ namespace driving5
                         button4.Text = "намалена видимост";
                         correctAns = 4;
                         is_submmitted12 = true;
+                        unique_index++;
                     }
                 }
                 else if (qnum == 13)
@@ -228,6 +241,7 @@ namespace driving5
                         button4.Text = "да превозва предмети, които пречат на управлението на превозното средство";
                         correctAns = 1;
                         is_submmitted13 = true;
+                        unique_index++;
                     }
                 }
                 else if (qnum == 14)
@@ -241,6 +255,7 @@ namespace driving5
                         button4.Text = "пътното платно";
                         correctAns = 4;
                         is_submmitted14 = true;
+                        unique_index++;
                     }
                 }
                 else if (qnum == 15)
@@ -254,6 +269,7 @@ namespace driving5
                         button4.Text = "от по-удобната на водача страна";
                         correctAns = 2;
                         is_submmitted15 = true;
+                        unique_index++;
                     }
                 }
                 else if (qnum == 16)
@@ -267,6 +283,7 @@ namespace driving5
                         button4.Text = "да се убеди, че няма да застраши останалите участници в движението";
                         correctAns = 4;
                         is_submmitted16 = true;
+                        unique_index++;
                     }
                 }
                 else if (qnum == 17)
@@ -280,6 +297,7 @@ namespace driving5
                         button4.Text = "когато искате да покажете на задния каква кола карате";
                         correctAns = 1;
                         is_submmitted17 = true;
+                        unique_index++;
                     }
                 }
                 else if (qnum == 18)
@@ -293,6 +311,7 @@ namespace driving5
                         button4.Text = "да, но зависи от ситуацията";
                         correctAns = 2;
                         is_submmitted18 = true;
+                        unique_index++;
                     }
                 }
                 else if (qnum == 19)
@@ -306,6 +325,7 @@ namespace driving5
                         button4.Text = "който кара най-висока кола";
                         correctAns = 1;
                         is_submmitted19 = true;
+                        unique_index++;
                     }
                 }
                 else if (qnum == 20)
@@ -319,6 +339,7 @@ namespace driving5
                         button4.Text = "да, но ако са с алкохол";
                         correctAns = 1;
                         is_submmitted20 = true;
+                        unique_index++;
                     }
                 }
                 else if (qnum == 21)
@@ -332,6 +353,7 @@ namespace driving5
                         button4.Text = "винаги, дори и да не дадат другите водачи път";
                         correctAns = 2;
                         is_submmitted21 = true;
+                        unique_index++;
                     }
                 }
                 else if (qnum == 22)
@@ -345,6 +367,7 @@ namespace driving5
                         button4.Text = "правилно, но ако първо присветна с дългите";
                         correctAns = 1;
                         is_submmitted22 = true;
+                        unique_index++;
                     }
                 }
                 else if (qnum == 23)
@@ -358,6 +381,7 @@ namespace driving5
                         button4.Text = "автомобилите";
                         correctAns = 1;
                         is_submmitted23 = true;
+                        unique_index++;
                     }
                 }
                 else if (qnum == 24)
@@ -371,6 +395,7 @@ namespace driving5
                         button4.Text = "не е длъжен да се съобразява със сигналите, които подават";
                         correctAns = 4;
                         is_submmitted24 = true;
+                        unique_index++;
                     }
                 }
                 else if (qnum == 25)
@@ -384,6 +409,7 @@ namespace driving5
                         button4.Text = "ДРУГО";
                         correctAns = 1;
                         is_submmitted25 = true;
+                        unique_index++;
                     }
                 }
                 else if (qnum == 26)
@@ -397,11 +423,13 @@ namespace driving5
                         button4.Text = "предупреждение";
                         correctAns = 1;
                         is_submmitted26 = true;
+                        unique_index++;
                     }
                 }
-
-
-                number_questions++;
+                if (number_questions == unique_index)
+                {
+                    number_questions++;
+                }
             }
 
             // End While loop
