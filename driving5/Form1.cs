@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,6 +14,34 @@ namespace driving5
     {
         int correctAns;
         bool is_submmitted1 = true;
+        bool is_submmitted2 = true;
+        bool is_submmitted3 = true;
+        bool is_submmitted4 = true;
+        bool is_submmitted5 = true;
+        bool is_submmitted6 = true;
+        bool is_submmitted7 = true;
+        bool is_submmitted8 = true;
+        bool is_submmitted9 = true;
+        bool is_submmitted10 = true;
+        bool is_submmitted11 = true;
+        bool is_submmitted12 = true;
+        bool is_submmitted13 = true;
+        bool is_submmitted14 = true;
+        bool is_submmitted15 = true;
+        bool is_submmitted16 = true;
+        bool is_submmitted17 = true;
+        bool is_submmitted18 = true;
+        bool is_submmitted19 = true;
+        bool is_submmitted20 = true;
+        bool is_submmitted21 = true;
+        bool is_submmitted22 = true;
+        bool is_submmitted23 = true;
+        bool is_submmitted24 = true;
+        bool is_submmitted25 = true;
+        bool is_submmitted26 = true;
+        
+        
+        
 
         public Form1()
         {
