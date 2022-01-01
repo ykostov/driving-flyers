@@ -71,7 +71,7 @@ namespace driving5
             }
             else if (qnum == 2)
             {   
-                  if (is_submmitted1 == false)
+                  if (is_submmitted2 == false)
                 {
                     label1.Text = "Когато светофара свети в жълто и червено значението е:";
                     button1.Text = "Внимание, спри!";
@@ -79,12 +79,12 @@ namespace driving5
                     button3.Text = "Преминаването е забранено";
                     button4.Text = "Преминаването е разрешено";
                     correctAns = 3;
-                    is_submmitted1 = true;
+                    is_submmitted2 = true;
                 }
             }
             else if (qnum == 3)
             {
-                if (is_submmitted1 == false)
+                if (is_submmitted3 == false)
                 {
                     label1.Text = "Кой от изброените фактори е с най-голямо значение за определяне на дистанцията при движение зад друго ППС?";
                     button1.Text = "марката на автомобила";
@@ -92,12 +92,12 @@ namespace driving5
                     button3.Text = "състоянието на пътя";
                     button4.Text = "видът на движещото се отпред ППС";
                     correctAns = 3;
-                    is_submmitted1 = true;
+                    is_submmitted3 = true;
                 }
             }
             else if (qnum == 4)
             {
-                if (is_submmitted1 == false)
+                if (is_submmitted4 == false)
                 {
                     label1.Text = "Когато няма други ограничения, водачите на леки моторни превозни средства с четири колела от категория 'АМ', при движение извън населено място, не трябва да превишават:";
                     button1.Text = "45 км/ч";
@@ -105,12 +105,12 @@ namespace driving5
                     button3.Text = "40 км/ч";
                     button4.Text = "55 км/ч";
                     correctAns = 1;
-                    is_submmitted1 = true;
+                    is_submmitted4 = true;
                 }
             }
             else if (qnum == 5)
             {
-                if (is_submmitted1 == false)
+                if (is_submmitted5 == false)
                 {
                     label1.Text = "Как ще постъпите при заслепяване от светлините на насрещно движещо се превозно средство?";
                     button1.Text = "ще сигнализирам със звуков сигнал";
@@ -118,12 +118,12 @@ namespace driving5
                     button3.Text = "ще намаля скоростта";
                     button4.Text = "ще продължа движението, като включа дългите светлини";
                     correctAns = 3;
-                    is_submmitted1 = true;
+                    is_submmitted5 = true;
                 }
             }
             else if (qnum == 6)
             {
-                 if (is_submmitted1 == false)
+                 if (is_submmitted6 == false)
                 {
                     label1.Text = "На водача на МПС със специален режим на движение е забранено:";
                     button1.Text = "да надвишава разрешената максимална скорост на движение";
@@ -131,12 +131,12 @@ namespace driving5
                     button3.Text = "да преминава без да спира, при наличие на пътен знак, който изисква това";
                     button4.Text = "да преминава при забраняващ сигнал на светофара";
                     correctAns = 2;
-                    is_submmitted1 = true;
+                    is_submmitted6 = true;
                 }
             }
             else if (qnum == 7)
             {
-                 if (is_submmitted1 == false)
+                 if (is_submmitted7 == false)
                 {
                     label1.Text = "Конструктивната максимална скорост на мотопеда е не по-голяма от:";
                     button1.Text = "50 км/ч";
@@ -144,12 +144,12 @@ namespace driving5
                     button3.Text = "60 км/ч";
                     button4.Text = "45 км/ч";
                     correctAns = 4;
-                    is_submmitted1 = true;
+                    is_submmitted7 = true;
                 }
             }
             else if (qnum == 8)
             {
-                 if (is_submmitted1 == false)
+                 if (is_submmitted8 == false)
                 {
                     label1.Text = "При движение на превозното средство в завой, с висока скорост, най-опасно е:";
                     button1.Text = "ускореното износване на окачването";
@@ -157,12 +157,12 @@ namespace driving5
                     button3.Text = "ускореното износване на протектора на гумите";
                     button4.Text = "възможното странично хлъзгане на автомобила";
                     correctAns = 4;
-                    is_submmitted1 = true;
+                    is_submmitted8 = true;
                 }
             }
             else if (qnum == 9)
             {
-                 if (is_submmitted1 == false)
+                 if (is_submmitted9 == false)
                 {
                     label1.Text = "При изпреварването на кое от изброените ППС, трябва да се осигури по-голяма странична дистанция?";
                     button1.Text = "автомобил";
@@ -170,12 +170,12 @@ namespace driving5
                     button3.Text = "съчленен автобус";
                     button4.Text = "трактор";
                     correctAns = 2;
-                  is_submmitted1 = true;
+                  is_submmitted9 = true;
                 }
             }
             else if (qnum == 10)
             {
-                 if (is_submmitted1 == false)
+                 if (is_submmitted10 == false)
                 {
                     label1.Text = "Какво влияние оказва върху дължината на спирачния път блокирането на колелата при спиране?";
                     button1.Text = "намалява дължината на спирачния път";
@@ -183,12 +183,12 @@ namespace driving5
                     button3.Text = "увеличава дължината на спирачния път";
                     button4.Text = "никакво";
                     correctAns = 3;
-                  is_submmitted1 = true;
+                  is_submmitted10 = true;
                 }
             }
             else if (qnum == 11)
             {
-                 if (is_submmitted1 == false)
+                 if (is_submmitted11 == false)
                 {
                     label1.Text = "Когато паркирането върху тротоара е разрешено, разстоянието между превозното средство и сградата трябва да бъде не по-малко от:";
                     button1.Text = " 1,0 м";
@@ -196,12 +196,12 @@ namespace driving5
                     button3.Text = " 0,5 м";
                     button4.Text = " 1,5 м";
                     correctAns = 2;
-                  is_submmitted1 = true;
+                  is_submmitted11 = true;
                 }
             }
             else if (qnum == 12)
             {
-                 if (is_submmitted1 == false)
+                 if (is_submmitted12 == false)
                 {
                     label1.Text = "На водача е разрешено да използва дългите светлини при:";
                     button1.Text = "движение по осветени участъци от пътя";
@@ -209,12 +209,12 @@ namespace driving5
                     button3.Text = "движение зад друго МПС на разстояние, по-малко от 50 м";
                     button4.Text = "намалена видимост";
                     correctAns = 4;
-                    is_submmitted1 = true;
+                    is_submmitted12 = true;
                 }
             }
             else if (qnum == 13)
             {
-                  if (is_submmitted1 == false)
+                  if (is_submmitted13 == false)
                 {
                     label1.Text = "На водача на двуколесно превозно средство е разрешено:";
                     button1.Text = "да се движи с включени светлини през деня";
@@ -222,7 +222,7 @@ namespace driving5
                     button3.Text = "да управлява превозното средство, без да държи кормилото с ръка";
                     button4.Text = "да превозва предмети, които пречат на управлението на превозното средство";
                     correctAns = 1;
-                    is_submmitted1 = true;
+                    is_submmitted13 = true;
                 }
             }
             else if (qnum == 14)
