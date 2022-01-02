@@ -39,15 +39,6 @@ namespace driving5
 
             if (qList.Contains(qnum)) { wasChosen = true; }
             else { wasChosen = false; }
-
-
-
-
-
-                  
-
-
-                    {
                 if (wasChosen == false)
                 {
                     if (qnum == 1)
@@ -75,6 +66,7 @@ namespace driving5
                         correctAns = 3;
 
                         unique_index++;
+                        qList.Add(qnum);
 
                     }
                     else if (qnum == 3)
@@ -88,6 +80,7 @@ namespace driving5
                         correctAns = 3;
 
                         unique_index++;
+                        qList.Add(qnum);
 
                     }
                     else if (qnum == 4)
@@ -101,6 +94,7 @@ namespace driving5
                         correctAns = 1;
 
                         unique_index++;
+                        qList.Add(qnum);
 
                     }
                     else if (qnum == 5)
@@ -114,6 +108,7 @@ namespace driving5
                         correctAns = 3;
 
                         unique_index++;
+                        qList.Add(qnum);
 
                     }
                     else if (qnum == 6)
@@ -127,6 +122,7 @@ namespace driving5
                         correctAns = 2;
 
                         unique_index++;
+                        qList.Add(qnum);
 
                     }
                     else if (qnum == 7)
@@ -140,6 +136,7 @@ namespace driving5
                         correctAns = 4;
 
                         unique_index++;
+                        qList.Add(qnum);
 
                     }
                     else if (qnum == 8)
@@ -153,6 +150,7 @@ namespace driving5
                         correctAns = 4;
 
                         unique_index++;
+                        qList.Add(qnum);
 
                     }
                     else if (qnum == 9)
@@ -166,6 +164,7 @@ namespace driving5
                         correctAns = 2;
 
                         unique_index++;
+                        qList.Add(qnum);
 
                     }
                     else if (qnum == 10)
@@ -179,6 +178,7 @@ namespace driving5
                         correctAns = 3;
 
                         unique_index++;
+                        qList.Add(qnum);
 
                     }
                     else if (qnum == 11)
@@ -192,6 +192,7 @@ namespace driving5
                         correctAns = 2;
 
                         unique_index++;
+                        qList.Add(qnum);
 
                     }
                     else if (qnum == 12)
@@ -205,6 +206,7 @@ namespace driving5
                         correctAns = 4;
 
                         unique_index++;
+                        qList.Add(qnum);
 
                     }
                     else if (qnum == 13)
@@ -218,6 +220,7 @@ namespace driving5
                         correctAns = 1;
 
                         unique_index++;
+                        qList.Add(qnum);
 
                     }
                     else if (qnum == 14)
@@ -231,6 +234,7 @@ namespace driving5
                         correctAns = 4;
 
                         unique_index++;
+                        qList.Add(qnum);
 
                     }
                     else if (qnum == 15)
@@ -244,6 +248,7 @@ namespace driving5
                         correctAns = 2;
 
                         unique_index++;
+                        qList.Add(qnum);
 
                     }
                     else if (qnum == 16)
@@ -257,6 +262,7 @@ namespace driving5
                         correctAns = 4;
 
                         unique_index++;
+                        qList.Add(qnum);
 
                     }
                     else if (qnum == 17)
@@ -270,6 +276,7 @@ namespace driving5
                         correctAns = 1;
 
                         unique_index++;
+                        qList.Add(qnum);
 
                     }
                     else if (qnum == 18)
@@ -283,6 +290,7 @@ namespace driving5
                         correctAns = 2;
 
                         unique_index++;
+                        qList.Add(qnum);
 
                     }
                     else if (qnum == 19)
@@ -294,6 +302,7 @@ namespace driving5
                         button3.Text = "който има по-силна музика";
                         button4.Text = "който кара най-висока кола";
                         correctAns = 1;
+                        qList.Add(qnum);
 
                         unique_index++;
 
@@ -309,6 +318,7 @@ namespace driving5
                         correctAns = 1;
 
                         unique_index++;
+                        qList.Add(qnum);
 
                     }
                     else if (qnum == 21)
@@ -322,6 +332,7 @@ namespace driving5
                         correctAns = 2;
 
                         unique_index++;
+                        qList.Add(qnum);
 
                     }
                     else if (qnum == 22)
@@ -335,6 +346,7 @@ namespace driving5
                         correctAns = 1;
 
                         unique_index++;
+                        qList.Add(qnum);
 
                     }
                     else if (qnum == 23)
@@ -348,6 +360,7 @@ namespace driving5
                         correctAns = 1;
 
                         unique_index++;
+                        qList.Add(qnum);
 
                     }
                     else if (qnum == 24)
@@ -361,6 +374,7 @@ namespace driving5
                         correctAns = 4;
 
                         unique_index++;
+                        qList.Add(qnum);
 
                     }
                     else if (qnum == 25)
@@ -374,6 +388,7 @@ namespace driving5
                         correctAns = 1;
 
                         unique_index++;
+                        qList.Add(qnum);
 
                     }
                     else if (qnum == 26)
@@ -387,7 +402,7 @@ namespace driving5
                         correctAns = 1;
 
                         unique_index++;
-
+                        qList.Add(qnum);
                     }
                     if (number_questions == unique_index)
                     {
