@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -434,8 +434,28 @@ namespace driving5
                 button2.Text = "";
                 button3.Text = "";
                 button4.Text = "";
+                label2.Visible = false;
+                button1.Visible = false;
+                button2.Visible = false;
+                button3.Visible = false;
+                button4.Visible = false;
+                button5.Visible = false;
             }
         }
- 
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            label1.Visible = true;
+            label2.Visible = true;
+            button1.Visible = true;
+            button2.Visible = true;
+            button3.Visible = true;
+            button4.Visible = true;
+            button5.Visible = true;
+            button10.Visible = true;
+            button6.Visible = false;
+
+            QuestionChooser();
+        }
     }
 }
