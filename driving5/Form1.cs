@@ -12,10 +12,10 @@ namespace driving5
 {
     public partial class Form1 : Form
     {
-        int correctAns;
-        int number_questions = 0;
-        int unique_index = 0;
-        bool wasChosen = false;
+        public int correctAns;
+        public int number_questions = 0;
+        public int unique_index = 0;
+        public bool wasChosen = false;
 
         List<int> qList = new List<int>();  
 
@@ -57,7 +57,7 @@ namespace driving5
             QuestionChooser();
         }
 
-        private void QuestionChooser()
+        public void QuestionChooser()
         {
             while (number_questions < 26)
             {for( int i = 0; i <26; i++){
