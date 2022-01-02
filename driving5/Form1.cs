@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Collections.Generic;
 
 namespace driving5
 {
@@ -18,7 +19,7 @@ namespace driving5
         public int unique_index = 0;
         public bool wasChosen = false;
 
-        public List<int> qList = new List<int>();
+        public List<int> qList = new List<int>(26);
 
         public Form1()
         {
@@ -26,19 +27,16 @@ namespace driving5
         }
 
 
-        private void QuestionChooser()
+        public void QuestionChooser()
         {
 
             Random r = new Random();
-            int qnum = r.Next(1, 25);
+            public int qnum = r.Next(1, 25);
 
-            for (int i = 0; i < 26; i++)
-            {
-                if (qnum == i) { wasChosen = true; }
-            }
 
             if (qList.Contains(qnum)) { wasChosen = true; }
-            else { wasChosen = false; }
+            else
+            {
                 if (wasChosen == false)
                 {
                     if (qnum == 1)
@@ -53,6 +51,9 @@ namespace driving5
 
                         unique_index++;
                         qList.Add(qnum);
+
+                        unique_index++;
+
 
                     }
                     else if (qnum == 2)
@@ -404,20 +405,12 @@ namespace driving5
                         unique_index++;
                         qList.Add(qnum);
                     }
-                    if (number_questions == unique_index)
-                    {
-                        number_questions++;
-                    }
+
+             
+                        
+                
                 }
             }
-            
-            
-
-        }
-
-
-        private void label1_Click(object sender, EventArgs e)
-        {
 
         }
 
@@ -425,5 +418,8 @@ namespace driving5
         {
             QuestionChooser();
         }
+
     }
+
 }
+
