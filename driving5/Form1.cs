@@ -32,7 +32,7 @@ namespace driving5
         public void QuestionChooser()
         {
             Random r = new Random();
-            int qnum = r.Next(1, 25);
+            int qnum = r.Next(1, 27);
 
 
             if (!qList.Contains(qnum))
@@ -397,7 +397,9 @@ namespace driving5
                         unique_index += 1;
                         qList.Add(qnum);
                     }
-            }       
+                number_questions++;
+                label2.Text = "Number of question: " + number_questions;
+            }        
         }
 
 
