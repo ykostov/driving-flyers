@@ -404,7 +404,7 @@ namespace driving5
                         qList.Add(qnum);
                     }
                     number_questions++;
-                    label2.Text = "Number of question: " + number_questions;
+                    label2.Text = "Number of question: " + unique_index;
                     wasChosen = true;
                 }
                 else
@@ -423,7 +423,18 @@ namespace driving5
 
         private void button10_Click(object sender, EventArgs e)
         {
-            QuestionChooser();
+            if (unique_index < 26)
+            {
+                QuestionChooser();
+            }
+            else
+            {
+                label1.Text = "КРАЙ!";
+                button1.Text = "";
+                button2.Text = "";
+                button3.Text = "";
+                button4.Text = "";
+            }
         }
  
     }
