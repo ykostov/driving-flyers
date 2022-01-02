@@ -65,9 +65,7 @@ namespace driving5
                 }
                 Random r = new Random();
                 int qnum = r.Next(1, 25);
-                for( int i = 0; i < qList.Count; i++){
-                    if(qnum == i){wasChosen = true;}
-                }
+                if(qList.Contains(qnum)){wasChosen = True;}
                 if(wasChosen == false){
                     if (qnum == 1)
                     {
