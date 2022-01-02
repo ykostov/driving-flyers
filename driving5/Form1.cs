@@ -19,7 +19,7 @@ namespace driving5
         public int correctAns;
         public int number_questions = 0;
         public int unique_index = 0;
-        public bool wasChosen = false;
+        
 
         public List<int> qList = new List<int>(26);
 
@@ -31,39 +31,45 @@ namespace driving5
 
         public void QuestionChooser()
         {
-            Random r = new Random();
-            int qnum = r.Next(1, 27);
-
-
-            if (!qList.Contains(qnum))
+            bool wasChosen = false;
+            
+            while (wasChosen == false)
             {
-                if (qnum == 1)
+
+                Random r = new Random();
+                int qnum = r.Next(1, 27);
+
+
+
+                if (!qList.Contains(qnum))
                 {
-                    label1.Text = "Правилата за движение в населено място се прилагат:";
-                    button1.Text = "по всички участъци от пътя, по които се движат пешеходци";
-                    button2.Text = "след знака, с който е обозначено началото на населеното място";
-                    button3.Text = "от първата сграда в населеното място";
-                    button4.Text = "само, когато гледат полицаи";
-                    correctAns = 2;
+                    if (qnum == 1)
+                    {
+                        label1.Text = "Правилата за движение в населено място се прилагат:";
+                        button1.Text = "по всички участъци от пътя, по които се движат пешеходци";
+                        button2.Text = "след знака, с който е обозначено началото на населеното място";
+                        button3.Text = "от първата сграда в населеното място";
+                        button4.Text = "само, когато гледат полицаи";
+                        correctAns = 2;
 
-                    qList.Add(qnum);
-                    unique_index+= 1;
-                }
-                else if (qnum == 2)
-                {
+                        qList.Add(qnum);
+                        unique_index += 1;
+                    }
+                    else if (qnum == 2)
+                    {
 
-                    label1.Text = "Когато светофара свети в жълто и червено значението е:";
-                    button1.Text = "Внимание, спри!";
-                    button2.Text = "Внимание";
-                    button3.Text = "Преминаването е забранено";
-                    button4.Text = "Преминаването е разрешено";
-                    correctAns = 3;
+                        label1.Text = "Когато светофара свети в жълто и червено значението е:";
+                        button1.Text = "Внимание, спри!";
+                        button2.Text = "Внимание";
+                        button3.Text = "Преминаването е забранено";
+                        button4.Text = "Преминаването е разрешено";
+                        correctAns = 3;
 
-                    unique_index+= 1;
-                    qList.Add(qnum);
+                        unique_index += 1;
+                        qList.Add(qnum);
 
-                }
-                else if (qnum == 3)
+                    }
+                    else if (qnum == 3)
                     {
 
                         label1.Text = "Кой от изброените фактори е с най-голямо значение за определяне на дистанцията при движение зад друго ППС?";
@@ -397,9 +403,15 @@ namespace driving5
                         unique_index += 1;
                         qList.Add(qnum);
                     }
-                number_questions++;
-                label2.Text = "Number of question: " + number_questions;
-            }        
+                    number_questions++;
+                    label2.Text = "Number of question: " + number_questions;
+                    wasChosen = true;
+                }
+                else
+                {
+                    wasChosen = false;
+                }
+            }
         }
 
 
@@ -413,5 +425,6 @@ namespace driving5
         {
             QuestionChooser();
         }
+ 
     }
 }
