@@ -21,6 +21,7 @@ namespace driving5
         public int unique_index = 0;
         public int points = 0;
 
+        // Да лист ползваме ама иначе е много дълго решението
         public List<int> qList = new List<int>(26);
 
 
