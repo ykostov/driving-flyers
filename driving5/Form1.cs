@@ -21,7 +21,11 @@ namespace driving5
         public int unique_index = 0;
         public int points = 0;
 
-        // Да лист ползваме ама иначе е много дълго решението
+        /* 
+            Да лист ползваме ама иначе е много дълго решението
+            вместо променлива за всеки въпрос, когато един въпрос е минал се добавя в листа и 
+            когато викаме функцията се прави проверка дали въпроса, който ще бъде зададен е в този лист
+        */
         public List<int> qList = new List<int>(26);
 
 
@@ -30,6 +34,7 @@ namespace driving5
             InitializeComponent();
         }
 
+        // Избира въпрос:
         public void QuestionChooser()
         {
             bool wasChosen = false;
@@ -407,7 +412,8 @@ namespace driving5
                     number_questions++;
                     label2.Text = "Number of question: " + unique_index;
                     wasChosen = true;
-
+                    
+                    //Проверка за верен отговор и точкуване:
                     if(button1.Checked == true && button1.Tag == correctAns){
                         points++;
                     } else if(button2.Checked == true && button2.Tag == correctAns){
