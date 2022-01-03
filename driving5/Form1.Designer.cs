@@ -38,6 +38,7 @@
             this.button5 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -47,6 +48,7 @@
             this.button1.Size = new System.Drawing.Size(281, 44);
             this.button1.TabIndex = 0;
             this.button1.TabStop = true;
+            this.button1.Tag = "1";
             this.button1.Text = "radioButton1";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.button1.UseVisualStyleBackColor = true;
@@ -70,6 +72,7 @@
             this.button2.Size = new System.Drawing.Size(281, 41);
             this.button2.TabIndex = 2;
             this.button2.TabStop = true;
+            this.button2.Tag = "2";
             this.button2.Text = "radioButton2";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.button2.UseVisualStyleBackColor = true;
@@ -82,6 +85,7 @@
             this.button3.Size = new System.Drawing.Size(307, 44);
             this.button3.TabIndex = 3;
             this.button3.TabStop = true;
+            this.button3.Tag = "3";
             this.button3.Text = "radioButton3";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.button3.UseVisualStyleBackColor = true;
@@ -94,6 +98,7 @@
             this.button4.Size = new System.Drawing.Size(307, 41);
             this.button4.TabIndex = 4;
             this.button4.TabStop = true;
+            this.button4.Tag = "4";
             this.button4.Text = "radioButton4";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.button4.UseVisualStyleBackColor = true;
@@ -130,6 +135,7 @@
             this.button5.Text = "ИЗХОД";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Visible = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // label3
             // 
@@ -151,11 +157,22 @@
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
+            // label4
+            // 
+            this.label4.Location = new System.Drawing.Point(19, 154);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(769, 23);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "label4";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label4.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button5);
@@ -185,6 +202,7 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label label4;
     }
 }
 

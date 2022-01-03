@@ -21,11 +21,6 @@ namespace driving5
         public int unique_index = 0;
         public int points = 0;
 
-        /* 
-            Да лист ползваме, ама иначе е много дълго решението.
-            Вместо променлива за всеки въпрос, когато един въпрос е минал се добавя в листа и 
-            когато викаме функцията се прави проверка дали въпроса, който ще бъде зададен е в този лист
-        */
         public List<int> qList = new List<int>(26);
 
 
@@ -34,17 +29,16 @@ namespace driving5
             InitializeComponent();
         }
 
-        // Избира въпрос:
         public void QuestionChooser()
         {
             bool wasChosen = false;
-            
+
             while (wasChosen == false)
             {
 
                 Random r = new Random();
                 int qnum = r.Next(1, 27);
-                
+
 
 
                 if (!qList.Contains(qnum))
@@ -411,23 +405,26 @@ namespace driving5
                     }
                     number_questions++;
                     label2.Text = "Number of question: " + unique_index;
-                    wasChosen = true;
+                    
 
-                    //Проверка за верен отговор и точкуване:
-                    int button1Tag = Convert.ToInt32(button1.Tag);
-                    int button2Tag = Convert.ToInt32(button2.Tag);
-                    int button3Tag = Convert.ToInt32(button3.Tag);
-                    int button4Tag = Convert.ToInt32(button4.Tag);
-
-                    if(button1.Checked == true && button1Tag == correctAns){
-                        points++;
-                    } else if(button2.Checked == true && button2Tag == correctAns){
-                        points++;
-                    } else if(button3.Checked == true && button3Tag == correctAns){
-                        points++;
-                    } else if(button4.Checked == true && button4Tag == correctAns){
+                    if ((button1.Checked == true) && (Convert.ToInt32(button1.Tag) == correctAns))
+                    {
                         points++;
                     }
+                    else if ((button2.Checked == true) && (Convert.ToInt32(button2.Tag) == correctAns))
+                    {
+                        points++;
+                    }
+                    else if ((button3.Checked == true) && (Convert.ToInt32(button3.Tag) == correctAns))
+                    {
+                        points++;
+                    }
+                    else if ((button4.Checked == true) && (Convert.ToInt32(button4.Tag) == correctAns))
+                    {
+                        points++;
+                    }
+
+                    wasChosen = true;
                 }
                 else
                 {
@@ -451,7 +448,17 @@ namespace driving5
             }
             else
             {
-                label1.Text = "КРАЙ!";
+                label1.Text = "Резултат: " + points;
+                label4.Visible = true;
+                if (points > 22)
+                {
+                    label4.Text = "Изпитът е взет УСПЕШНО!";
+                }
+                else
+                {
+                    label4.Text = "Изпитът НЕ е взет! (нужни са 23 от 26 точки)";
+                }
+
                 button1.Text = "";
                 button2.Text = "";
                 button3.Text = "";
@@ -462,6 +469,7 @@ namespace driving5
                 button3.Visible = false;
                 button4.Visible = false;
                 button5.Visible = false;
+                button10.Visible = false;
             }
         }
 
