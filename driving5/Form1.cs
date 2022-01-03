@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +19,7 @@ namespace driving5
         public int correctAns;
         public int number_questions = 0;
         public int unique_index = 0;
-        
+        public int points = 0;
 
         public List<int> qList = new List<int>(26);
 
@@ -38,7 +38,7 @@ namespace driving5
 
                 Random r = new Random();
                 int qnum = r.Next(1, 27);
-
+                
 
 
                 if (!qList.Contains(qnum))
@@ -406,6 +406,16 @@ namespace driving5
                     number_questions++;
                     label2.Text = "Number of question: " + unique_index;
                     wasChosen = true;
+
+                    if(button1.Checked == true && button1.Tag == correctAns){
+                        points++;
+                    } else if(button2.Checked == true && button2.Tag == correctAns){
+                        points++;
+                    } else if(button3.Checked == true && button3.Tag == correctAns){
+                        points++;
+                    } else if(button4.Checked == true && button4.Tag == correctAns){
+                        points++;
+                    }
                 }
                 else
                 {
