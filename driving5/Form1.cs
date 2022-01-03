@@ -22,8 +22,8 @@ namespace driving5
         public int points = 0;
 
         /* 
-            Да лист ползваме ама иначе е много дълго решението
-            вместо променлива за всеки въпрос, когато един въпрос е минал се добавя в листа и 
+            Да лист ползваме, ама иначе е много дълго решението.
+            Вместо променлива за всеки въпрос, когато един въпрос е минал се добавя в листа и 
             когато викаме функцията се прави проверка дали въпроса, който ще бъде зададен е в този лист
         */
         public List<int> qList = new List<int>(26);
@@ -412,15 +412,20 @@ namespace driving5
                     number_questions++;
                     label2.Text = "Number of question: " + unique_index;
                     wasChosen = true;
-                    
+
                     //Проверка за верен отговор и точкуване:
-                    if(button1.Checked == true && button1.Tag == correctAns){
+                    int button1Tag = Convert.ToInt32(button1.Tag);
+                    int button2Tag = Convert.ToInt32(button2.Tag);
+                    int button3Tag = Convert.ToInt32(button3.Tag);
+                    int button4Tag = Convert.ToInt32(button4.Tag);
+
+                    if(button1.Checked == true && button1Tag == correctAns){
                         points++;
-                    } else if(button2.Checked == true && button2.Tag == correctAns){
+                    } else if(button2.Checked == true && button2Tag == correctAns){
                         points++;
-                    } else if(button3.Checked == true && button3.Tag == correctAns){
+                    } else if(button3.Checked == true && button3Tag == correctAns){
                         points++;
-                    } else if(button4.Checked == true && button4.Tag == correctAns){
+                    } else if(button4.Checked == true && button4Tag == correctAns){
                         points++;
                     }
                 }
